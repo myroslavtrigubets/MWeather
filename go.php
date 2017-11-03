@@ -11,8 +11,10 @@ $command = new Command();
 
 $go->setWebhook('URL');
 $getUpdate = $go->getUpdate('php://input');
+
 $getAnswer = $answer->getAnswer($getUpdate['message']['text'], $dictionary);
 $getCommand = $command->getCommand($getUpdate['message']['text'], $commandList);
+
 if ($getAnswer){
    $go->sendMessage($getUpdate['message']['from']['id'], $getAnswer);
 }
