@@ -1,7 +1,7 @@
 <?php
 
 $config = array(
-    'token' => '287915511:AAG_UOUsMS5rLsGffdqAqoPosTLSW4u3ZyA'
+    'token' => '%token%'
 );
 
 $dictionary = array(
